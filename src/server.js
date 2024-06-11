@@ -1,19 +1,19 @@
-// Importar los módulos
 import express from 'express'
-import routerLegalCase from './routers/legalCase_router.js'
-import routerUser from './routers/user_routes.js'
+import dotenv from 'dotenv'
+import routerLegalCase from './routers/legalcase.routes.js'
+import routerUser from './routers/user.routes.js'
 
-// Inicializaciones
 const app = express()
 
-// Definir variables
+dotenv.config()
+
 app.set('port', process.env.port || 3000)
 
-// Middlewares
 app.use(express.json())
 
-// Rutas
-app.get('/', (req, res)=> res.send("Server on"))
-app.use('/api/v1', routerUser, routerLegalCase)
-// Exportar la variable
+app.get('/', (_, res) => res.send("Server on"))
+
+app.use('/api/v1', routerLegalCase)
+app.use('/api/v1', routerUser)
+
 export default app

@@ -1,7 +1,5 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv'
+import mongoose from "mongoose";
 
-dotenv.config()
-const bdd = mongoose.connect(process.env.MONGO_URL)
+const bdd = mongoose.connect(process.env.MONGO_URL);
 
-export default bdd
+export default bdd;

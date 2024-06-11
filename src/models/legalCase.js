@@ -1,30 +1,30 @@
 import mongoose from 'mongoose';
 
 const legalCaseSchema = new mongoose.Schema({
-    nombredelCaso: {
+    caseName: {
         type: String,
         required: true
     },
-    delito: {
+    crime: {
         type: String,
         required: true
     },
-    introduccion: {
+    introduction: {
         type: String,
         required: true
     },
-    acontecimientos: {
+    events: {
         type: Array,
         required: true
     },
-    evidencias: {
+    evidencie: {
         type: Object,
         required: true
     },
-    procesados: {
+    prosecuted: {
         type: Array,
         required: true
     },
 });
 
-export default mongoose.model('LegalCase', legalCaseSchema);
+export default mongoose.model('LegalCases', legalCaseSchema);

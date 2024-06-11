@@ -1,7 +1,9 @@
-// Importar la variable
 import app from "./server.js";
 import bdd from "./database.js";
 
+const port = app.get('port');
 
-app.listen(app.get('port'), ()=>console.log("Server on"))
-bdd.then(() => {console.log("Database connected")}).catch(error => console.log("Failed connection"))
+app.listen(port, () => console.log(`Server is running on http://localhost:${port}`));
+
+bdd.then(() => console.log("MongoDB database connected"))
+    .catch(error => console.log(`Failed connection\n Error: ${error}`))
