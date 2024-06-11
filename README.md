@@ -4,9 +4,11 @@
 
 This project aims to address the challenges of connotation cases (ambiguous legal interpretations) in Ecuador by providing a RESTful API to manage and analyze case data. In order to facilitate official information and avoid social media misinformation.
 
-Project Deployment URL: 
+Project Deployment URL: https://laboratorio-12-13.onrender.com
 
 ## 🚀 Get Started
+
+To use the RESTful API you need to register and then log in with a REST Client (For example Postman. The credentials go in request body.
 
 ### REGISTER
 
@@ -21,6 +23,8 @@ POST /api/v1/users/login
 ```
 
 ## 🛠️ API Architecture (CRUD Operations)
+
+All verbs except GET are private routes
 
 ### CREATE
 
