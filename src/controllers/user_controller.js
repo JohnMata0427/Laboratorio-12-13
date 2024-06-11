@@ -18,21 +18,20 @@ const registerUserController = async (req, res) => {
 const loginUserController = async (req, res) => {
     try {
         const { username, password } = req.body
-        const user = await userModel({ username, password })
-        const data = await userModel.findOne({ username })
-        const passwordMatch = await bcrypt.compare(password, data.password)
+        const user = await userModel.findOne({ username })
+        const passwordMatch = await bcrypt.compare(password, user.password)
 
         if (!passwordMatch) {
             return res.status(400).json({ msg: "Invalid credentials" })
         }
 
-        const token = createToken({ id: data._id, username })
+        const token = createToken({ id: user._id, username })
         
         res.status(200).json({ user, token })
     } catch (error) {
         res.status(500).json({ msg: error.message })
     }
-}                  
+}            
 
 export {
     registerUserController,
