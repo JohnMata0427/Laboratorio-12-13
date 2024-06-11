@@ -1,4 +1,4 @@
-import legalCaseModel from '../models/legalcase.js'
+import legalCaseModel from '../models/legalCase.js'
 
 const createLegalCaseController = async (req, res) => {
     try {
