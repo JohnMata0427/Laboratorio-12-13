@@ -20,7 +20,18 @@ const registerUserController = async (req, res) => {
     res.status(201).json(user)
 }
 
+const loginUserController = async (req, res)=>{
+    const {username, password} = req.body
+    try {
+        const user = await userModel({username, password})
+        res.status(200).json({user})
+    } catch (error) {
+        res.status(500).json({msg:"error"})
+    }
+}
+
 
 export {
-    registerUserController
+    registerUserController,
+    loginUserController
 }
