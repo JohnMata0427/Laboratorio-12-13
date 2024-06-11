@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://cdn-icons-png.flaticon.com/512/1995/1995670.png" height="35px"> Authentication and Authorization <img src="https://cdn-icons-png.flaticon.com/512/1995/1995670.png" height="35px"></h1>
+<h1 align="center"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31Rqh4zC7D6IiOvEtiiOLY3swIAPRJubu5w&s" height="35px"> Authentication and Authorization <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR31Rqh4zC7D6IiOvEtiiOLY3swIAPRJubu5w&s" height="35px"></h1>
 
 ## 👨‍⚖️ RESTful API of Public Connotation Cases in Ecuador 🇪🇨
 
