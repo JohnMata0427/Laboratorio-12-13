@@ -1,4 +1,4 @@
-<h1 align="center"><img src="https://github.com/JohnMata0427/Laboratorio-10-11/assets/150484680/9f517c03-9b64-4d06-bebe-d47e10e9eeb7" height="35px"> Authentication and Authorization <img src="https://github.com/JohnMata0427/Laboratorio-10-11/assets/150484680/9f517c03-9b64-4d06-bebe-d47e10e9eeb7" height="35px"></h1>
+<h1 align="center"><img src="https://cdn-icons-png.flaticon.com/512/1995/1995670.png" height="35px"> Authentication and Authorization <img src="https://cdn-icons-png.flaticon.com/512/1995/1995670.png" height="35px"></h1>
 
 ## 👨‍⚖️ RESTful API of Public Connotation Cases in Ecuador 🇪🇨
 
@@ -6,7 +6,7 @@ This project aims to address the challenges of connotation cases (ambiguous lega
 
 Project Deployment URL: 
 
-## GET STARTED
+## 🚀 Get Started
 
 ### REGISTER
 
