@@ -10,7 +10,7 @@ RESTful API Deployment URL: https://laboratorio-12-13.onrender.com
 
 To create, update, or delete data in the RESTful API, you must register and then log in using a REST Client (e.g. Postman). Credentials are included in the request body, and once logged in, a token is sent to you in the response for use within one hour. This token goes in the authentication header of the request when using the API's private routes.
 
-### REGISTER AND LOGIN
+#### REGISTER AND LOGIN
 
 Route to register new user account:
 
@@ -37,7 +37,7 @@ In the request body include the following properties:
 
 In private routes (POST, PUT and DELETE) include the token granted upon login in the authentication headers to make use of the API
 
-### Data Schema
+#### Data Schema
 
 ```json
 {
@@ -53,13 +53,13 @@ In private routes (POST, PUT and DELETE) include the token granted upon login in
 }
 ```
 
-### CREATE
+#### CREATE
 
 ```http
 POST /api/v1/legalcases
 ```
 
-### READ
+#### READ
 
 ```http
 GET /api/v1/legalcases
@@ -69,13 +69,13 @@ GET /api/v1/legalcases
 GET /api/v1/legalcases/{id}
 ```
 
-### UPDATE
+#### UPDATE
 
 ```http
 PUT /api/v1/legalcases/{id}
 ```
 
-### DELETE
+#### DELETE
 
 ```http
 DELETE /api/v1/legalcases/{id}
