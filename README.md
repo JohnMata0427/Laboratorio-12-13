@@ -29,6 +29,7 @@ In the request body include the following properties:
 ```json
 {
   "username": "Your username",
+  "email":"Your email",
   "password": "Your password"
 }
 ```
@@ -41,42 +42,49 @@ In private routes (POST, PUT and DELETE) include the token granted upon login in
 
 ```json
 {
-  "caseName": "string",
-  "crime": "string",
-  "introduction": "string",
-  "events": [],
-  "evidencie": {
-    "type": "string",
-    "url":"string"
+  "rute": [],
+  "capacity":{
+    "blue": number, 
+    "yellow": number, 
+    "green": number
   },
-  "prosecuted": []
+  "startsAt":"",
+  "endsAt":"",
+  "driverId":number
 }
 ```
 
 #### CREATE
 
 ```http
-POST /api/v1/legalcases
+POST /api/v1/tankers
 ```
+![image](https://github.com/JohnMata0427/Laboratorio-12-13/assets/133397748/7baec65b-fb05-49b0-ae9d-0e32322a1072)
+
 
 #### READ
 
 ```http
-GET /api/v1/legalcases
+GET /api/v1/tankers
 ```
 
 ```http
-GET /api/v1/legalcases/{id}
+GET /api/v1/tankers/{id}
 ```
+![image](https://github.com/JohnMata0427/Laboratorio-12-13/assets/133397748/5b293e97-1496-4329-afa7-520e16576efb)
 
 #### UPDATE
 
 ```http
-PUT /api/v1/legalcases/{id}
+PUT /api/v1/tankers/{id}
 ```
+![image](https://github.com/JohnMata0427/Laboratorio-12-13/assets/133397748/41d54f02-11e5-4a8a-8cb5-e158c187e880)
+
 
 #### DELETE
 
 ```http
-DELETE /api/v1/legalcases/{id}
+DELETE /api/v1/takers/{id}
 ```
+![image](https://github.com/JohnMata0427/Laboratorio-12-13/assets/133397748/29c662ff-26e5-4896-85c7-dc69582c6a47)
+
